@@ -1,0 +1,50 @@
+﻿@model Dypa.KoinonikosTourismos.Types.Selected
+
+<h1>😄 Είστε στους Επιλεχθέντες!</h1>
+<h4>@Model.FullName</h4>
+<p>Με βάση το ΑΦΜ και το ΑΜΚΑ που εισάγατε βρέθηκαν τα παρακάτω αποτελέσματα:</p>
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Αρ. Πρωτ. Αίτησης</th>
+            <th scope="col">Σειρά Κατάταξης</th>
+            <th scope="col">Σύνολο Μορίων</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.ApplicationId</td>
+            <td>@Model.Ranking</td>
+            <td>@Model.TotalScore</td>
+        </tr>
+    </tbody>
+</table>
+
+<h4 class="mt-5">Πιο αναλυτικά τα μόρια ανα κριτήριο:</h4>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col"># Κριτήριο</th>
+            <th scope="col">Μόρια</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>@Model.Criteria1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>@Model.Criteria2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>@Model.Criteria3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>@Model.Criteria4</td>
+        </tr>
+    </tbody>
+</table>

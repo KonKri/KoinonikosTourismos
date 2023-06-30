@@ -1,0 +1,18 @@
+﻿@model Dypa.KoinonikosTourismos.Types.Rejected
+
+<h1>😨 Είστε στους Aπορριφθεντες!</h1>
+<p>Με βάση το ΑΦΜ και το ΑΜΚΑ που εισάγατε βρέθηκαν τα παρακάτω αποτελέσματα:</p>
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Αρ. Πρωτ. Αίτησης</th>
+            <th scope="col">Λόγος Απόρριψης</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.ApplicationId</td>
+            <td>@Model.RejectionReason</td>
+        </tr>
+    </tbody>
+</table>

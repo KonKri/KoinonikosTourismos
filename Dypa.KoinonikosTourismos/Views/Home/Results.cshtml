@@ -1,0 +1,23 @@
+﻿@using Dypa.KoinonikosTourismos.Types;
+@{
+    var selected = (Selected)ViewData[Consts.ViewBag.Selected];
+    var runnerUp = (RunnerUp)ViewData[Consts.ViewBag.RunnerUp];
+    var rejected = (Rejected)ViewData[Consts.ViewBag.Rejected];
+}
+
+@if (selected != null)
+{
+    await Html.RenderPartialAsync("../Partials/Selected", selected);
+}
+else if (runnerUp != null)
+{
+    await Html.RenderPartialAsync("../Partials/RunnerUp", runnerUp);
+}
+else if (rejected != null)
+{
+    await Html.RenderPartialAsync("../Partials/Rejected", rejected);
+}
+else
+{
+    await Html.RenderPartialAsync("../Partials/NotFound");
+}

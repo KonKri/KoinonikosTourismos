@@ -1,0 +1,22 @@
+﻿@using Dypa.KoinonikosTourismos.Controllers;
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Οριστικά Αποτελέσματα Κοινωνικού Τουρισμού</h1>
+<h4>Δείτε τα αποτελέσματα του Κοινωνικού Τουρισμού</h4>
+<p>Συμπληρώστε το ΑΦΜ και το ΑΜΚΑ σας (τα τελευταία 4 ψηφία αρκούν). Αμέσως θα μάθετε αν είστε στους <i>Επιτυχόντες</i>, <i>Επιλαχόντες</i> ή <i>Αποκλειόμενους </i></p>
+
+<form asp-controller="@nameof(HomeController).Replace("Controller",string.Empty)" asp-action="@nameof(HomeController.Results)">
+    <div class="form-group">
+        <label>ΑΦΜ</label>
+        <input type="text" name="formVatNumber" class="form-control" placeholder="Αρκούν και τα 4 τελευταία ψηφία"  minlength="4" required>
+        <small class="form-text text-muted">Για παράδειγμα σε ΑΦΜ 123456789 αρκούν τα 6789.</small>
+    </div>
+    <div class="form-group mt-3">
+        <label>ΑΜΚΑ</label>
+        <input type="text" name="formSocialSecurityNumber" class="form-control" placeholder="Αρκούν και τα 4 τελευταία ψηφία" minlength="4" required>
+        <small class="form-text text-muted">Για παράδειγμα σε AMKA 0101200101234 αρκούν τα 1234.</small>
+    </div>
+    <button type="submit" class="btn btn-primary form-group mt-3">Κατανοώ ότι εισάγω τα στοιχεία αυτά με δική μου ευθύνη και επιθυμώ να συνεχίσω</button>
+</form>
