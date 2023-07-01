@@ -1,4 +1,4 @@
-# Dypa.KoinonikosTourismos
+# KoinonikosTourismos
 This is a simple MVC app that search if the user is selected, runner up, or rejected for the program of Koinonikos Tourismos.
 I had to look myself up using the .xlsx files and I really didn't had any fun. I thought I could make the user experience slightly better by making this app.
 Feel free to contact me for further info.
