@@ -1,4 +1,4 @@
-﻿namespace Dypa.KoinonikosTourismos
+﻿namespace KoinonikosTourismos
 {
     public class Consts
     {

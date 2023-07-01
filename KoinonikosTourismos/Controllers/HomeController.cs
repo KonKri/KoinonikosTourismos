@@ -1,16 +1,16 @@
-﻿using Dypa.KoinonikosTourismos.Types;
+﻿using KoinonikosTourismos.Types;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Dypa.KoinonikosTourismos.Controllers
+namespace KoinonikosTourismos.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly DypaDbContext _db;
+        private readonly KoinonikosTourismosDbContext _db;
 
         public HomeController(
             ILogger<HomeController> logger,
-            DypaDbContext db)
+            KoinonikosTourismosDbContext db)
         {
             _logger = logger;
             _db = db;
@@ -42,7 +42,7 @@ namespace Dypa.KoinonikosTourismos.Controllers
                     rejected = GetSingleOrDefaultFor<Rejected>(vatNumber4digits, socialSecurityNumber4digits);
                 }
             }
-            
+
             // provide results to view.
             ViewData[Consts.ViewBag.Selected] = selected;
             ViewData[Consts.ViewBag.RunnerUp] = runnerUp;

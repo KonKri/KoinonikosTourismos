@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Dypa.KoinonikosTourismos.Types
+namespace KoinonikosTourismos.Types
 {
     public abstract class BasicInfoEntity
     {

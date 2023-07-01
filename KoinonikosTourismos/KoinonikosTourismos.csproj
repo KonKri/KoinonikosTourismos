@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Dypa.KoinonikosTourismos.Types\Dypa.KoinonikosTourismos.Types.csproj" />
+    <ProjectReference Include="..\KoinonikosTourismos.Types\KoinonikosTourismos.Types.csproj" />
   </ItemGroup>
 
 </Project>

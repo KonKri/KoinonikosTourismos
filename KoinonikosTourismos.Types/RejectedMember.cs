@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Dypa.KoinonikosTourismos.Types
+namespace KoinonikosTourismos.Types
 {
     [Table("RejectedMember_Final")]
     public class RejectedMember : BasicInfoEntity

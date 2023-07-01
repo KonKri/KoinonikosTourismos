@@ -1,10 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace Dypa.KoinonikosTourismos.Types
+namespace KoinonikosTourismos.Types
 {
-    public class DypaDbContext : DbContext
+    public class KoinonikosTourismosDbContext : DbContext
     {
-        public DypaDbContext(DbContextOptions options) : base(options)
+        public KoinonikosTourismosDbContext(DbContextOptions options) : base(options)
         {
         }
 

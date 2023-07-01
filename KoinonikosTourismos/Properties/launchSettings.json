@@ -8,7 +8,7 @@
     }
   },
   "profiles": {
-    "Dypa.KoinonikosTourismos": {
+    "KoinonikosTourismos": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

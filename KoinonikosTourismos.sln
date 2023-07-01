@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KoinonikosTourismos", "KoinonikosTourismos\KoinonikosTourismos.csproj", "{DD320A85-61D4-4DF4-AE38-9DFF2C84ECF8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KoinonikosTourismos.Types", "KoinonikosTourismos.Types\KoinonikosTourismos.Types.csproj", "{FA464719-CE3B-47A4-BEC5-EA0431823A93}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD320A85-61D4-4DF4-AE38-9DFF2C84ECF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD320A85-61D4-4DF4-AE38-9DFF2C84ECF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD320A85-61D4-4DF4-AE38-9DFF2C84ECF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD320A85-61D4-4DF4-AE38-9DFF2C84ECF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA464719-CE3B-47A4-BEC5-EA0431823A93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA464719-CE3B-47A4-BEC5-EA0431823A93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA464719-CE3B-47A4-BEC5-EA0431823A93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA464719-CE3B-47A4-BEC5-EA0431823A93}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {50FD6A74-A70B-473E-BC5A-1A6F322E1425}
+	EndGlobalSection
+EndGlobal

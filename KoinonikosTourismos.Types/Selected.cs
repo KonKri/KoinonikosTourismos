@@ -1,10 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Dypa.KoinonikosTourismos.Types
+namespace KoinonikosTourismos.Types
 {
-    [Table("RunnerUp_Final")]
-    public class RunnerUp : BasicInfoEntity
+    [Table("Selected_Final")]
+    public class Selected : BasicInfoEntity
     {
         [Key]
         public int Id { get; set; }
@@ -30,7 +30,16 @@ namespace Dypa.KoinonikosTourismos.Types
         [Column("ΣΕΙΡΑ_ΚΑΤΑΤΑΞΗΣ")]
         public string? Ranking { get; set; }
 
-        [Column("ΑΡΙΘΜΟΣ_ΕΠΙΤΑΓΗΣ")]
+        [Column("ΟΝ_ΜΟ_ΟΦΕΛΟΥΜΕΝΟΥ")]
+        public string? FullName { get; set; }
+
+        [Column("ΑΜΚΑ_1")]
+        public string? SocialSecurityNumberAlt { get; set; }
+
+        [Column("ΕΠΙΤΑΓΗ")]
         public string? TicketNumber { get; set; }
+
+        [Column("ΑΛΛΗ_ΕΝΔΕΙΞΗ")]
+        public string? OtherIndication { get; set; }
     }
 }

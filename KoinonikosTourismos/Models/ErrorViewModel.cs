@@ -1,4 +1,4 @@
-namespace Dypa.KoinonikosTourismos.Models
+namespace KoinonikosTourismos.Models
 {
     public class ErrorViewModel
     {
